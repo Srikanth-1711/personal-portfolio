@@ -18,14 +18,14 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <Image
-            src="/logo.png"
-            alt="Logo"
-            width={70}
-            height={70}
+            src="/avatar-ai-bright.png"
+            alt="Lakshmi Srikanth AI Avatar"
+            width={46}
+            height={46}
             draggable={false}
-            className="cursor-pointer"
+            className="cursor-pointer rounded-full shadow-[0_0_15px_rgba(147,51,234,0.5)] hover:scale-105 transition duration-300"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          <div className="hidden md:flex font-bold ml-[12px] text-gray-300 hover:text-white transition">Lakshmi Srikanth</div>
         </Link>
 
         {/* Web Navbar */}
@@ -48,7 +48,17 @@ export const Navbar = () => {
               rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
             >
-              Source Code
+              GitHub
+            </Link>
+
+            {/* Resume */}
+            <Link
+              href={LINKS.resume}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="cursor-pointer text-[#a855f7] hover:text-white font-medium transition flex items-center gap-1"
+            >
+              Resume ↗
             </Link>
           </div>
         </div>
@@ -98,7 +108,16 @@ export const Navbar = () => {
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Source Code
+              GitHub
+            </Link>
+            <Link
+              href={LINKS.resume}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="cursor-pointer text-[#a855f7] hover:text-white font-medium transition text-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Resume ↗
             </Link>
           </div>
 

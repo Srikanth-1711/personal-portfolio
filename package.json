@@ -1,6 +1,6 @@
 {
-  "name": "space-portfolio",
-  "version": "1.0.1",
+  "name": "personal-portfolio",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,51 +9,32 @@
     "lint": "eslint ."
   },
   "author": {
-    "name": "Sanidhya Kumar Verma",
-    "email": "sanidhyyy@gmail.com",
-    "url": "https://github.com/sanidhyy"
+    "name": "Lakshmi Srikanth Polavarapu",
+    "email": "lakshmisrikanthpolavarapu@gmail.com",
+    "url": "https://github.com/Srikanth-1711"
   },
-  "description": "Welcome to my full stack Next.js 14 space portfolio.",
+  "description": "Lakshmi Srikanth Polavarapu — Personal Space-Themed Portfolio | AI & ML Engineer",
   "keywords": [
-    "reactjs",
-    "nextjs",
-    "vercel",
-    "react",
-    "space-portfolio",
+    "ai-engineer",
+    "mlops",
+    "llmops",
     "portfolio",
-    "react-icons",
-    "cn",
-    "clsx",
-    "3d-portfolio",
-    "3d-website",
-    "sonner",
+    "space-portfolio",
+    "nextjs",
+    "react",
+    "threejs",
     "framer-motion",
-    "motion",
-    "animation",
-    "heroicons",
-    "next-themes",
-    "postcss",
-    "prettier",
-    "react-dom",
-    "tailwindcss",
-    "tailwindcss-animate",
-    "ui/ux",
-    "js",
-    "javascript",
-    "typescript",
-    "eslint",
-    "html",
-    "css"
+    "tailwindcss"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sanidhyy/space-portfolioit"
+    "url": "https://github.com/Srikanth-1711/personal-portfolio"
   },
-  "homepage": "https://github.com/sanidhyy/space-portfolio#readme",
+  "homepage": "https://github.com/Srikanth-1711/personal-portfolio#readme",
   "bugs": {
-    "url": "https://github.com/sanidhyy/space-portfolio/issues",
-    "email": "sanidhyyy@gmail.com"
+    "url": "https://github.com/Srikanth-1711/personal-portfolio/issues",
+    "email": "lakshmisrikanthpolavarapu@gmail.com"
   },
   "funding": [
     {

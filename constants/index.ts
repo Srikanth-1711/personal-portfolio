@@ -1,364 +1,233 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
 import {
-  RxDiscordLogo,
   RxGithubLogo,
-  RxInstagramLogo,
-  RxTwitterLogo,
   RxLinkedinLogo,
+  RxEnvelopeClosed,
 } from "react-icons/rx";
 
+// ── Row 1: AI & Core ──────────────────────────────────────────────
 export const SKILL_DATA = [
-  {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Framer Motion",
-    image: "framer.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Stripe",
-    image: "stripe.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
+  { skill_name: "Python",      image: "python.svg",      width: 80, height: 80 },
+  { skill_name: "PyTorch",     image: "pytorch.svg",     width: 80, height: 80 },
+  { skill_name: "TensorFlow",  image: "tensorflow.svg",  width: 80, height: 80 },
+  { skill_name: "NumPy",       image: "numpy.svg",       width: 80, height: 80 },
+  { skill_name: "Pandas",      image: "pandas.svg",      width: 80, height: 80 },
+  { skill_name: "scikit-learn", image: "sklearn.svg",    width: 80, height: 80 },
+  { skill_name: "Matplotlib",  image: "matplotlib.svg",  width: 80, height: 80 },
+  { skill_name: "OpenCV",      image: "opencv.svg",      width: 80, height: 80 },
+  { skill_name: "Jupyter",     image: "jupyter.svg",     width: 80, height: 80 },
+  { skill_name: "Transformers", image: "transformers.svg", width: 80, height: 80 },
+  { skill_name: "HuggingFace", image: "huggingface.svg", width: 80, height: 80 },
+  { skill_name: "NVIDIA NeMo", image: "nemo.svg",        width: 80, height: 80 },
 ] as const;
 
-export const SOCIALS = [
-  {
-    name: "Instagram",
-    icon: RxInstagramLogo,
-    link: "https://instagram.com",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://x.com/_sanidhyy",
-  },
-] as const;
-
+// ── Row 2: LLM & GenAI ───────────────────────────────────────────
 export const FRONTEND_SKILL = [
-  {
-    skill_name: "HTML",
-    image: "html.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "CSS",
-    image: "css.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "JavaScript",
-    image: "js.png",
-    width: 65,
-    height: 65,
-  },
-  {
-    skill_name: "Tailwind CSS",
-    image: "tailwind.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Material UI",
-    image: "mui.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React",
-    image: "react.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Redux",
-    image: "redux.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "React Query",
-    image: "reactquery.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "TypeScript",
-    image: "ts.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Next.js 14",
-    image: "next.png",
-    width: 80,
-    height: 80,
-  },
+  { skill_name: "LangChain",   image: "langchain.svg",   width: 80, height: 80 },
+  { skill_name: "LangGraph",   image: "langgraph.svg",   width: 80, height: 80 },
+  { skill_name: "OpenAI",      image: "openai.svg",      width: 80, height: 80 },
+  { skill_name: "Gemini",      image: "gemini.svg",      width: 80, height: 80 },
+  { skill_name: "Llama",       image: "llama.svg",       width: 80, height: 80 },
+  { skill_name: "Ollama",      image: "ollama.svg",      width: 80, height: 80 },
+  { skill_name: "RAG",         image: "rag.svg",         width: 80, height: 80 },
+  { skill_name: "Embeddings",  image: "embeddings.svg",  width: 80, height: 80 },
+  { skill_name: "MCP",         image: "mcp.svg",         width: 80, height: 80 },
+  { skill_name: "IPython",     image: "ipython.png",     width: 80, height: 80 },
 ] as const;
 
+// ── Row 3: Inference & Serving + Vector DBs ──────────────────────
 export const BACKEND_SKILL = [
-  {
-    skill_name: "Node.js",
-    image: "node.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "Express.js",
-    image: "express.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    skill_name: "MongoDB",
-    image: "mongodb.png",
-    width: 40,
-    height: 40,
-  },
-  {
-    skill_name: "Firebase",
-    image: "firebase.png",
-    width: 55,
-    height: 55,
-  },
-  {
-    skill_name: "PostgreSQL",
-    image: "postgresql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "MySQL",
-    image: "mysql.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Prisma",
-    image: "prisma.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Graphql",
-    image: "graphql.png",
-    width: 80,
-    height: 80,
-  },
+  { skill_name: "vLLM",        image: "vllm.png",        width: 80, height: 80 },
+  { skill_name: "SGLang",      image: "sglang.svg",      width: 80, height: 80 },
+  { skill_name: "LiteLLM",     image: "litellm.png",     width: 80, height: 80 },
+  { skill_name: "FastAPI",     image: "fastapi.svg",     width: 80, height: 80 },
+  { skill_name: "Milvus",      image: "milvus.svg",      width: 80, height: 80 },
+  { skill_name: "ChromaDB",    image: "chromadb.svg",    width: 80, height: 80 },
+  { skill_name: "FAISS",       image: "faiss.svg",       width: 80, height: 80 },
+  { skill_name: "PostgreSQL",  image: "postgresql.svg",  width: 70, height: 70 },
+  { skill_name: "MySQL",       image: "mysql.svg",       width: 75, height: 75 },
+  { skill_name: "Redis",       image: "redis.svg",       width: 80, height: 80 },
 ] as const;
 
+// ── Row 4: Infrastructure ────────────────────────────────────────
 export const FULLSTACK_SKILL = [
-  {
-    skill_name: "React Native",
-    image: "reactnative.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Tauri",
-    image: "tauri.png",
-    width: 70,
-    height: 70,
-  },
-  {
-    skill_name: "Docker",
-    image: "docker.png",
-    width: 70,
-    height: 70,
-  },
-
-  {
-    skill_name: "Figma",
-    image: "figma.png",
-    width: 50,
-    height: 50,
-  },
+  { skill_name: "Docker",      image: "docker.svg",      width: 80, height: 80 },
+  { skill_name: "Kubernetes",  image: "kubernetes.svg",  width: 80, height: 80 },
+  { skill_name: "Linux",       image: "linux.svg",       width: 80, height: 80 },
+  { skill_name: "Nginx",       image: "nginx.svg",       width: 80, height: 80 },
+  { skill_name: "Git",         image: "git.svg",         width: 80, height: 80 },
+  { skill_name: "Bash",        image: "bash.svg",        width: 80, height: 80 },
 ] as const;
 
+// ── Row 5: Languages & Web ───────────────────────────────────────
 export const OTHER_SKILL = [
-  {
-    skill_name: "Go",
-    image: "go.png",
-    width: 60,
-    height: 60,
-  },
+  { skill_name: "C",           image: "c.svg",           width: 80, height: 80 },
+  { skill_name: "C++",         image: "cplusplus.svg",   width: 80, height: 80 },
+  { skill_name: "TypeScript",  image: "typescript.svg",  width: 80, height: 80 },
+  { skill_name: "React",       image: "react.svg",       width: 80, height: 80 },
+  { skill_name: "Next.js",     image: "nextjs.svg",      width: 80, height: 80 },
+  { skill_name: "VS Code",     image: "vscode.svg",      width: 80, height: 80 },
 ] as const;
 
+// ── Socials ──────────────────────────────────────────────────────
+export const SOCIALS = [
+  { name: "GitHub",   icon: RxGithubLogo,      link: "https://github.com/Srikanth-1711" },
+  { name: "LinkedIn", icon: RxLinkedinLogo,     link: "https://www.linkedin.com/in/lakshmi-srikanth-/" },
+  { name: "Email",    icon: RxEnvelopeClosed,   link: "mailto:lakshmisrikanthpolavarapu@gmail.com" },
+] as const;
+
+export const LINKS = {
+  sourceCode: "https://github.com/Srikanth-1711/personal-portfolio",
+  resume: "https://drive.google.com/file/d/1byedPQ9S-5z_g4Pz6BnRlGe45JcDUoc6/view?usp=sharing",
+  resumePdf: "/resume.pdf",
+};
+
+// ── Projects ─────────────────────────────────────────────────────
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "AI Diagnostic & Log Analysis Platform",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      "Internal AI system for the SAO (Systems and Optics) and QUAD (Quality and Diagnostics) organizations — enables engineers to explore diagnostic and regression-log data through retrieval-augmented workflows for enterprise router software.",
+    image: "/projects/diag_arch.jpg",
+    link: "#",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "MCP Schematic Analysis Tool",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      "Internal MCP server supporting engineers with schematic analysis and AI-assisted engineering workflows across cross-functional hardware and firmware teams.",
+    image: "/projects/mcp_schem.jpg",
+    link: "#",
   },
   {
-    title: "Space Themed Website",
+    title: "LLM Inference & Serving",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
+      "Hands-on model-serving work with vLLM, SGLang, and LiteLLM for GPU-backed AI applications across server environments and API gateways — powering internal AI tools at scale.",
+    image: "/projects/inf_serve.jpg",
+    link: "#",
+  },
+  {
+    title: "Aure — Autonomous Agent Runtime",
+    description:
+      "Autonomous Python agent runtime for iterative tool and code-execution workflows, informed by open-source agent research and built with deep system design principles.",
+    image: "/projects/aure_runtime.jpg",
+    link: "#",
+  },
+  {
+    title: "Ultron — Agentic Fine-tuning System",
+    description:
+      "Agentic system for orchestrating domain-specific fine-tuning workflows on engineering log datasets using NVIDIA NeMo — a standalone project focused on custom model intelligence.",
+    image: "/projects/ultron_tune.jpg",
+    link: "#",
+  },
+  {
+    title: "Fan Plot Curve Automation",
+    description:
+      "AI-based automation for a traditionally manual fan-plot-curve workflow in thermal engineering — built for cross-functional teams and designed to extend to future engineering automation projects.",
+    image: "/projects/fan_curve.jpg",
+    link: "#",
+  },
+  {
+    title: "Autonomous Workflow Agents",
+    description:
+      "Internal agents being built to automate and orchestrate repetitive engineering-team workflows across SAO, QUAD, and cross-functional hardware/firmware organizations.",
+    image: "/projects/agents_dag.jpg",
+    link: "#",
+  },
+  {
+    title: "ShipAI — Personal AI Platform",
+    description:
+      "Personal AI engineering platform exploring local models, agents, MCP, context optimization, and multi-agent systems — an ongoing sandbox for end-to-end AI application building.",
+    image: "/projects/shipai_plat.jpg",
+    link: "https://github.com/Srikanth-1711/shipai",
   },
 ] as const;
 
+// ── Footer ───────────────────────────────────────────────────────
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "Connect",
     data: [
-      {
-        name: "YouTube",
-        icon: FaYoutube,
-        link: "https://youtube.com",
-      },
-      {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
-      },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
+      { name: "GitHub",   icon: RxGithubLogo,    link: "https://github.com/Srikanth-1711" },
+      { name: "LinkedIn", icon: RxLinkedinLogo,   link: "https://www.linkedin.com/in/lakshmi-srikanth-/" },
+      { name: "Email",    icon: RxEnvelopeClosed, link: "mailto:lakshmisrikanthpolavarapu@gmail.com" },
+      { name: "Resume",   icon: null, link: "https://drive.google.com/file/d/1byedPQ9S-5z_g4Pz6BnRlGe45JcDUoc6/view?usp=sharing" },
     ],
   },
   {
-    title: "Social Media",
+    title: "Work",
     data: [
-      {
-        name: "Instagram",
-        icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://x.com/_sanidhyy",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
+      { name: "ShipAI",       icon: null, link: "https://github.com/Srikanth-1711/shipai" },
+      { name: "AI Projects",  icon: null, link: "#projects" },
+      { name: "Experience",   icon: null, link: "#experience" },
     ],
   },
   {
     title: "About",
     data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
-      },
+      { name: "My Stack",    icon: null, link: "#skills" },
+      { name: "Contact Me",  icon: null, link: "mailto:lakshmisrikanthpolavarapu@gmail.com" },
     ],
   },
 ] as const;
 
+// ── Nav Links ────────────────────────────────────────────────────
 export const NAV_LINKS = [
+  { title: "About me",   link: "#about-me" },
+  { title: "Skills",     link: "#skills" },
+  { title: "Projects",   link: "#projects" },
+  { title: "Experience", link: "#experience" },
+] as const;
+
+
+
+// ── Experience ───────────────────────────────────────────────────
+export const EXPERIENCE = [
   {
-    title: "About me",
-    link: "#about-me",
+    period: "Dec 2025 — Present",
+    title: "AI Engineer",
+    company: "Cisco (via Adecco)",
+    location: "Bengaluru, India",
+    logo: "/companies/cisco.svg",
+    logos: ["/companies/cisco.svg", "/companies/adecco.svg"],
+    tag: "Current Role",
+    skills: ["vLLM", "SGLang", "FastAPI", "Python", "C Embedded", "Agent Systems", "RAG"],
+    description:
+      "Building AI-powered engineering applications, autonomous agent systems, and inference infrastructure within the SAO (Systems and Optics) org. Working closely with QUAD (Quality and Diagnostics) software teams on enterprise router diagnostics. Deep cross-functional collaboration with C embedded firmware, PCB, EAC, mechanical, thermal, FPGA, chip testing, EDVGT, MDT, ODVT, and SI teams.",
   },
   {
-    title: "Skills",
-    link: "#skills",
+    period: "Nov 2024 — Nov 2025",
+    title: "AI Engineering Apprentice",
+    company: "Cisco",
+    location: "Bengaluru, India",
+    logo: "/companies/cisco.svg",
+    logos: ["/companies/cisco.svg"],
+    tag: "1-Year Apprenticeship",
+    skills: ["Python", "C", "Enterprise Diagnostics", "Linux", "Telemetry Analysis", "System Design"],
+    description:
+      "Completed a rigorous 1-year full-time technical apprenticeship within Cisco's SAO & QUAD organizations. Focused on diagnostic software for enterprise networking routers, integrating AI/ML workflows into regression-log analysis, hardware validation automation, and embedded system debugging.",
   },
   {
-    title: "Projects",
-    link: "#projects",
+    period: "Sept 2024 — Nov 2024",
+    title: "Junior Web Developer (Intern)",
+    company: "Beedata Technologies",
+    location: "Visakhapatnam (Remote / US Startup Client)",
+    logo: "/companies/beedata.svg",
+    logos: ["/companies/beedata.svg"],
+    tag: "Startup Experience",
+    skills: ["React", "JavaScript", "Node.js", "MySQL", "Full-Stack Dev", "REST APIs"],
+    description:
+      "Worked as a junior full-stack developer under senior contingent leads for US-based startup clients. Designed and implemented dynamic user interfaces in React, developed backend services in Node.js, and maintained relational databases using MySQL.",
+  },
+  {
+    period: "2020 — 2024",
+    title: "B.Tech, Electrical & Electronics Engineering",
+    company: "Raghu Engineering College",
+    location: "Visakhapatnam, India",
+    logo: "/companies/raghu.svg",
+    logos: ["/companies/raghu.svg"],
+    tag: "Graduated 2024",
+    skills: ["Linear Algebra", "Calculus", "Signal Processing", "Mathematics", "Core Engineering"],
+    description:
+      "Graduated with a strong academic foundation in engineering mathematics, linear algebra, and signal processing — the core mathematical bedrock underpinning modern machine learning, vector spaces, and neural architectures.",
   },
 ] as const;
 
-export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
-};
