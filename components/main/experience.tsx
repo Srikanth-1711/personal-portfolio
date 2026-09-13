@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import { slideInFromLeft, slideInFromTop } from "@/lib/motion";
 import { EXPERIENCE } from "@/constants";
+import { getAssetPath } from "@/utils/path";
 
 export const Experience = () => {
   return (
@@ -38,14 +39,14 @@ export const Experience = () => {
         {EXPERIENCE.map((exp, index) => (
           <motion.div
             key={exp.period + exp.title}
-            variants={slideInFromLeft(0.4 + index * 0.15)}
+            variants={slideInFromLeft(index * 0.15)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="relative flex flex-col md:flex-row gap-6 p-6 md:p-8 border border-[#7042f855] rounded-2xl bg-[#08031d80] backdrop-blur-xl hover:border-[#7042f8bb] hover:shadow-[0_0_30px_rgba(112,66,248,0.25)] transition-all duration-300 group"
+            className="w-full flex flex-col md:flex-row gap-6 p-6 md:p-8 rounded-2xl border border-[#2A0E61] bg-[#07021a]/70 backdrop-blur-md hover:border-[#7042F8bb] hover:shadow-[0_0_30px_rgba(112,66,248,0.25)] transition-all duration-300"
           >
-            {/* Company / Institution Logo(s) */}
-            <div className="flex-shrink-0 flex items-center justify-center gap-2.5 p-3 rounded-xl bg-[#12072b] border border-[#7042f840] shadow-inner group-hover:scale-105 transition-transform duration-300">
+            {/* Logo Badge */}
+            <div className="flex-shrink-0 flex items-center justify-center rounded-xl bg-[#12072b] border border-[#7042f840] p-3 w-fit h-fit shadow-md shadow-purple-900/20 self-start">
               {exp.logos && exp.logos.length > 1 ? (
                 <div className="flex items-center gap-2.5">
                   {exp.logos.map((logoUrl, i) => (
@@ -54,7 +55,7 @@ export const Experience = () => {
                       className="w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-lg bg-[#1a0c3a]/60 p-1.5 border border-[#7042f833]"
                     >
                       <Image
-                        src={logoUrl}
+                        src={getAssetPath(logoUrl)}
                         alt={exp.company}
                         width={64}
                         height={64}
@@ -66,7 +67,7 @@ export const Experience = () => {
               ) : (
                 <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center">
                   <Image
-                    src={exp.logo}
+                    src={getAssetPath(exp.logo)}
                     alt={exp.company}
                     width={80}
                     height={80}

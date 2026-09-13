@@ -8,6 +8,7 @@ import {
   OTHER_SKILL,
   SKILL_DATA,
 } from "@/constants";
+import { getAssetPath } from "@/utils/path";
 
 export const Skills = () => {
   return (
@@ -90,7 +91,7 @@ export const Skills = () => {
             muted
             autoPlay
           >
-            <source src="/videos/skills-bg.webm" type="video/webm" />
+            <source src={getAssetPath("/videos/skills-bg.webm")} type="video/webm" />
           </video>
         </div>
       </div>

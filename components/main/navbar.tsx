@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { LINKS, NAV_LINKS, SOCIALS } from "@/constants";
+import { getAssetPath } from "@/utils/path";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,7 +19,7 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <Image
-            src="/avatar-ai-bright.png"
+            src={getAssetPath("/avatar-ai-bright.png")}
             alt="Lakshmi Srikanth AI Avatar"
             width={46}
             height={46}

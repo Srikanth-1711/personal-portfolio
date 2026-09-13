@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import { slideInFromTop } from "@/lib/motion";
+import { getAssetPath } from "@/utils/path";
 
 export const Encryption = () => {
   return (
@@ -24,14 +25,14 @@ export const Encryption = () => {
       <div className="flex flex-col items-center justify-center translate-y-[-40px] md:translate-y-[-50px] absolute z-[20] w-auto h-auto px-4">
         <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
           <Image
-            src="/lock-top.png"
+            src={getAssetPath("/lock-top.png")}
             alt="Lock top"
             width={50}
             height={50}
             className="translate-y-5 transition-all duration-200 group-hover:translate-y-11"
           />
           <Image
-            src="/lock-main.png"
+            src={getAssetPath("/lock-main.png")}
             alt="Lock main"
             width={70}
             height={70}
@@ -59,7 +60,7 @@ export const Encryption = () => {
         {/* Cisco CCNA credential preview */}
         <div className="mt-2 hidden sm:flex items-center gap-3 px-4 py-2 rounded-xl bg-[#08031d99] border border-[#049fd944] backdrop-blur-md hover:border-[#049fd9] transition-colors">
           <Image
-            src="/companies/ccna.svg"
+            src={getAssetPath("/companies/ccna.svg")}
             alt="Cisco CCNA Certified"
             width={180}
             height={60}
@@ -87,7 +88,7 @@ export const Encryption = () => {
           preload="false"
           className="w-full h-auto"
         >
-          <source src="/videos/encryption-bg.webm" type="video/webm" />
+          <source src={getAssetPath("/videos/encryption-bg.webm")} type="video/webm" />
         </video>
       </div>
     </div>

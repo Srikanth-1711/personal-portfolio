@@ -10,6 +10,8 @@ import {
   slideInFromTop,
 } from "@/lib/motion";
 
+import { getAssetPath } from "@/utils/path";
+
 export const HeroContent = () => {
   return (
     <motion.div
@@ -20,9 +22,9 @@ export const HeroContent = () => {
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[10px] border border-[#7042f88b] opacity-90"
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[8px] h-5 w-5" />
+          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
             AI &amp; ML Engineer · MLOps · LLMOps · Agentic AIOps
           </h1>
@@ -59,7 +61,7 @@ export const HeroContent = () => {
           <motion.a
             variants={slideInFromLeft(1.1)}
             className="py-2.5 px-6 border border-[#7042f88b] bg-[rgba(3,0,20,0.6)] hover:bg-[#7042f833] text-center text-gray-200 hover:text-white cursor-pointer rounded-lg font-medium transition flex items-center gap-2 hover:scale-105"
-            href="/resume.pdf"
+            href={getAssetPath("/resume.pdf")}
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -74,7 +76,7 @@ export const HeroContent = () => {
         className="w-full h-full flex justify-center items-center"
       >
         <Image
-          src="/hero-bg.svg"
+          src={getAssetPath("/hero-bg.svg")}
           alt="AI engineering system diagram"
           height={650}
           width={650}

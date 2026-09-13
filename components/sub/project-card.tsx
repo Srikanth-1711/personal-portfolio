@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getAssetPath } from "@/utils/path";
 
 type ProjectCardProps = {
   src: string;
@@ -23,7 +24,7 @@ export const ProjectCard = ({
     >
       <div className="relative w-full aspect-video overflow-hidden bg-[#0c0524] border-b border-[#2A0E61]/60">
         <Image
-          src={src}
+          src={getAssetPath(src)}
           alt={title}
           width={1280}
           height={720}
